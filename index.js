@@ -11,7 +11,7 @@ const server = http.createServer(app);
 
 const io = socketIO(server, {
     cors: {
-      origin: ['http://localhost:3000', 'http://localhost:3000/'],
+      origin: ['https://doubtshare.vercel.app', 'https://doubtshare.vercel.app/'],
       methods: ['GET', 'POST'],
       credentials: true,
     },
